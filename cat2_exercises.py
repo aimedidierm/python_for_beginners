@@ -10,16 +10,10 @@ fahrenheit = (celsius * 9/5) + 32
 print('%.2f Celsius is: %0.2f Fahrenheit' %(celsius, fahrenheit))
 #Q3
 # Three sides of the triangle is a, b and c:  
-a = float(input('Enter first side: '))  
-b = float(input('Enter second side: '))  
-c = float(input('Enter third side: '))  
-  
-# calculate the semi-perimeter  
-s = (a + b + c) / 2  
-  
-# calculate the area  
-area = (s*(s-a)*(s-b)*(s-c)) ** 0.5  
-print('The area of the triangle is %0.2f' %area)
+b = float(input('Enter the base: '))  
+h = float(input('Enter the height: '))
+area = (b*h)/2
+print("The area is ",area)
 #Q4
 n=int(input("Enter the total number you want to enter:"))
 
@@ -78,3 +72,17 @@ multiplyValues = 8*16*22*12*41
 n = 5
 geometricMean = (multiplyValues)**(1/n)
 print ('The Geometric Mean is: ' + str(geometricMean))
+#CAT2 Q3 
+num1=int(input("Enter first number:"))
+num2=int(input("Enter second number:"))
+numbers = [num1,num2]
+sum = sum(numbers)
+if sum>1000:
+    print(sum)
+else:
+    print(num1*num2)
+#Exam Q1
+num1=int(input("Enter first number:"))
+num2=int(input("Enter second number:"))
+sum = num1+num2
+print("The sum is",sum)
