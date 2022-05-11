@@ -73,14 +73,16 @@ n = 5
 geometricMean = (multiplyValues)**(1/n)
 print ('The Geometric Mean is: ' + str(geometricMean))
 #CAT2 Q3 
+import math
 num1=int(input("Enter first number:"))
 num2=int(input("Enter second number:"))
 numbers = [num1,num2]
+product = math.prod(numbers)
 sum = sum(numbers)
-if sum>1000:
-    print(sum)
+if product>1000:
+    print("The sum is ",sum)
 else:
-    print(num1*num2)
+    print("The product is ",product)
 #Exam Q1
 num1=int(input("Enter first number:"))
 num2=int(input("Enter second number:"))
